@@ -9,7 +9,10 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DemoMaterialModule} from './material-module';
 
-import {TabGroupBasicExample} from './app/tab-group-basic-example';
+import {TabGroup} from './app/tab-group';
+import { ZoneJSDemo } from './app/ZoneJS/ZoneJs.component';
+import { NgZoneDemo } from './app/ng-zone/ng-zone.component';
+import { GridComponent, GridListComponent, GridElementComponent } from './app/grid/grid.component';
 
 @NgModule({
   imports: [
@@ -21,9 +24,9 @@ import {TabGroupBasicExample} from './app/tab-group-basic-example';
     MatNativeDateModule,
     ReactiveFormsModule,
   ],
-  entryComponents: [TabGroupBasicExample],
-  declarations: [TabGroupBasicExample],
-  bootstrap: [TabGroupBasicExample],
+  entryComponents: [],
+  declarations: [TabGroup, ZoneJSDemo, NgZoneDemo, GridComponent, GridListComponent, GridElementComponent],
+  bootstrap: [TabGroup],
   providers: []
 })
 export class AppModule {}
